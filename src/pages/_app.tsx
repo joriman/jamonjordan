@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 import type { AppType } from 'next/app'
 import { trpc } from '../utils/trpc'
-import { AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from 'motion/react'
 
 const App: AppType = ({ Component, pageProps, router }) => {
   return (

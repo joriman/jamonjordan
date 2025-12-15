@@ -1,4 +1,6 @@
-export const perspective = {
+import type { Variants } from 'motion/react';
+
+export const perspective: Variants = {
     initial: {
         scale: 1,
         y: 0,
@@ -13,12 +15,12 @@ export const perspective = {
         opacity: 0.5,
         transition: {
             duration: 1.2,
-            ease: [0.76, 0, 0.24, 1]
+            ease: [0.76, 0, 0.24, 1] as const
         }
     }
 }
 
-export const slide = {
+export const slide: Variants = {
     initial: {
         y: "100vh",
     },
@@ -29,12 +31,12 @@ export const slide = {
         y: 0,
         transition: {
             duration: 1,
-            ease: [0.76, 0, 0.24, 1]
+            ease: [0.76, 0, 0.24, 1] as const
         }
     }
 }
 
-export const opacity = {
+export const opacity: Variants = {
     initial: {
         opacity: 0
     },

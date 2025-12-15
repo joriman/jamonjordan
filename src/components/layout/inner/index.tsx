@@ -1,7 +1,7 @@
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 import { Sora } from 'next/font/google'
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'motion/react';
 import { slide, opacity, perspective } from './transition';
 
 const sora = Sora({
@@ -10,7 +10,7 @@ const sora = Sora({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800']
 })
 
-const anim = (variants: { initial: { y: string; } | { scale: number; y: number; } | { opacity: number; }; enter: { y: string; } | { scale: number; y: number; } | { opacity: number; transition: { duration: number; }; }; exit: { y: number; transition: { duration: number; ease: number[]; }; } | { scale: number; y: number; opacity: number; transition: { duration: number; ease: number[]; }; } | { opacity: number; }; }) => {
+const anim = (variants: Variants) => {
   return {
     initial: "initial",
     animate: "enter",

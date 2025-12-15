@@ -1,3 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-royal-navy: #020547;
+  --font-sora: var(--font-sora), sans-serif;
+}

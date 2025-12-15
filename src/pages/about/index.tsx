@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 const About = () => {
   return (
